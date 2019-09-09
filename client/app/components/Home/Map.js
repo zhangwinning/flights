@@ -126,9 +126,9 @@ export default class Airport extends PureComponent {
         const { nodeList } = this.state
         return (
             <div>
-                <label> show paths. </label>
+                <h2> show paths. </h2>
                     <PathList data = {nodeList} />
-                <label> render a airport chart. </label>
+                <h2> render a airport chart. </h2>
                 <ReactEcharts
                     option={this.getOption()}
                     style={{ height: '700px', width: '100%' }}

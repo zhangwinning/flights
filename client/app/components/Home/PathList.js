@@ -9,7 +9,7 @@ export default class PathList extends Component {
                 title: 'path',
                 dataIndex: 'path',
                 render: (record) => {
-                    return record.join('---')
+                    return record.join('--->')
                 }
             },
             {
