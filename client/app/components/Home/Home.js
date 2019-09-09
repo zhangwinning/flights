@@ -9,8 +9,6 @@ import {
 import Select from './Select'
 import Map from './Map'
 
-import Airport from './Airport'
-
 class Home extends Component {
   constructor(props) {
     super(props);

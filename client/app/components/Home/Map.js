@@ -2,23 +2,27 @@ import React, { PureComponent } from 'react';
 import ReactEcharts from 'echarts-for-react';
 import 'whatwg-fetch';
 
+import PathList from './PathList'
+
 require("echarts/map/js/world.js");
 
 export default class Airport extends PureComponent {
     constructor(props) {
         super(props);
         this.state = {
-            data: [],
+            edgeList: [],
+            nodeList: [],
         };
     }
     getOption = () => {
 
-        const { data } = this.state
+        const { edgeList } = this.state
 
+        // console.l
         const convertData = function () {
             var res = [];
-            for (var i = 0; i < data.length; i++) {
-                var dataItem = data[i];
+            for (var i = 0; i < edgeList.length; i++) {
+                var dataItem = edgeList[i];
                 var fromY0 = parseFloat(dataItem.y0);
                 var toX0 = parseFloat(dataItem.x0);
 
@@ -27,9 +31,7 @@ export default class Airport extends PureComponent {
 
                 const coords = [[fromY0, toX0], [fromY1, toX1]]
 
-                res.push({
-                    coords: coords
-                });
+                res.push({ coords: coords });
             }
             return res;
         };
@@ -45,7 +47,7 @@ export default class Airport extends PureComponent {
                     normal: {
                         color: "#a6c84c",
                         width: 1,
-                        opacity: 0.08,
+                        opacity: 0.3,
                         curveness: 0.1
                     }
                 },
@@ -101,9 +103,11 @@ export default class Airport extends PureComponent {
             })
         })
             .then(res => res.json())
-            .then(json => {
+            .then(data => {
+                const result = data.result
                 this.setState({
-                    data: json.result,
+                    edgeList: result.edgeList,
+                    nodeList : result.nodeList
                 })
             })
     }
@@ -119,8 +123,11 @@ export default class Airport extends PureComponent {
     }
 
     render() {
+        const { nodeList } = this.state
         return (
             <div>
+                <label> show paths. </label>
+                    <PathList data = {nodeList} />
                 <label> render a airport chart. </label>
                 <ReactEcharts
                     option={this.getOption()}
