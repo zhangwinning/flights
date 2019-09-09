@@ -1,0 +1,162 @@
+[
+  {
+    "name": "Goroka",
+    "id": "1"
+  },
+  {
+    "name": "Madang",
+    "id": "2"
+  },
+  {
+    "name": "Mount Hagen",
+    "id": "3"
+  },
+  {
+    "name": "Nadzab",
+    "id": "4"
+  },
+  {
+    "name": "Port Moresby Jacksons Intl",
+    "id": "5"
+  },
+  {
+    "name": "Wewak Intl",
+    "id": "6"
+  },
+  {
+    "name": "Narsarsuaq",
+    "id": "7"
+  },
+  {
+    "name": "Nuuk",
+    "id": "8"
+  },
+  {
+    "name": "Sondre Stromfjord",
+    "id": "9"
+  },
+  {
+    "name": "Thule Air Base",
+    "id": "10"
+  },
+  {
+    "name": "Akureyri",
+    "id": "11"
+  },
+  {
+    "name": "Egilsstadir",
+    "id": "12"
+  },
+  {
+    "name": "Hornafjordur",
+    "id": "13"
+  },
+  {
+    "name": "Husavik",
+    "id": "14"
+  },
+  {
+    "name": "Isafjordur",
+    "id": "15"
+  },
+  {
+    "name": "Keflavik International Airport",
+    "id": "16"
+  },
+  {
+    "name": "Patreksfjordur",
+    "id": "17"
+  },
+  {
+    "name": "Reykjavik",
+    "id": "18"
+  },
+  {
+    "name": "Siglufjordur",
+    "id": "19"
+  },
+  {
+    "name": "Vestmannaeyjar",
+    "id": "20"
+  },
+  {
+    "name": "Sault Ste Marie",
+    "id": "21"
+  },
+  {
+    "name": "Winnipeg St Andrews",
+    "id": "22"
+  },
+  {
+    "name": "Shearwater",
+    "id": "23"
+  },
+  {
+    "name": "St Anthony",
+    "id": "24"
+  },
+  {
+    "name": "Tofino",
+    "id": "25"
+  },
+  {
+    "name": "Kugaaruk",
+    "id": "26"
+  },
+  {
+    "name": "Baie Comeau",
+    "id": "27"
+  },
+  {
+    "name": "Bagotville",
+    "id": "28"
+  },
+  {
+    "name": "Baker Lake",
+    "id": "29"
+  },
+  {
+    "name": "Campbell River",
+    "id": "30"
+  },
+  {
+    "name": "Brandon Muni",
+    "id": "31"
+  },
+  {
+    "name": "Cambridge Bay",
+    "id": "32"
+  },
+  {
+    "name": "Nanaimo",
+    "id": "33"
+  },
+  {
+    "name": "Castlegar",
+    "id": "34"
+  },
+  {
+    "name": "Miramichi",
+    "id": "35"
+  },
+  {
+    "name": "Charlo",
+    "id": "36"
+  },
+  {
+    "name": "Kugluktuk",
+    "id": "37"
+  },
+  {
+    "name": "Coronation",
+    "id": "38"
+  },
+  {
+    "name": "Chilliwack",
+    "id": "39"
+  },
+  {
+    "name": "Clyde River",
+    "id": "40"
+  }
+]
