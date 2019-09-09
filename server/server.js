@@ -24,7 +24,8 @@ app.use(express.json());
 // API routes
 require('./routes')(app);
 
-require('./loadingGraph')
+// 初始化graph 到 globe 变量中
+require('./lib/initGraph')
 
 if (isDev) {
     const compiler = webpack(webpackConfig);

@@ -90,7 +90,7 @@ export default class Airport extends PureComponent {
     };
 
 
-    getPath(selectAirportId) {
+    getPathApi(selectAirportId) {
         fetch(`/api/getPath`, {
             method: 'POST',
             headers: {
@@ -107,14 +107,15 @@ export default class Airport extends PureComponent {
                 })
             })
     }
+
     componentWillReceiveProps() {
         const { selectAirportId } = this.props
-        this.getPath(selectAirportId)
+        this.getPathApi(selectAirportId)
     }
 
     componentDidMount() {
         const { selectAirportId } = this.props
-        this.getPath(selectAirportId)
+        this.getPathApi(selectAirportId)
     }
 
     render() {

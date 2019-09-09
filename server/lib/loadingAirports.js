@@ -14,7 +14,7 @@ function getAirports() {
     lines.forEach(line => {
         line = line.replace(/"/g, '')
         const elements = line.split(',')
-        const port = new airport(
+        const doc = new airport(
             elements[0],
             elements[1],
             elements[2],
@@ -24,7 +24,7 @@ function getAirports() {
             elements[6],
             elements[7],
         )
-        airportList.set(elements[0], port)
+        airportList.set(elements[0], doc)
         allAirportID.push(elements[0])
     });
     return { airportList, allAirportID }

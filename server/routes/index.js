@@ -3,8 +3,8 @@ const path = require('path');
 
 const { root } = require('../../config/helpers.js')
 const rootPath = root()
-// let data = fs.readFileSync(rootPath + 'server/data/airports.dat')
-const run = require('../lib/handle')
+
+const handlers = require('../lib/handlers')
 
 module.exports = (app) => {
   // API routes
@@ -27,12 +27,11 @@ module.exports = (app) => {
   app.post('/api/getPath', (req, res, next) => {
     const { id } = req.body
 
-    console.log('---->', id)
-    const result = run(id)
+    const result = handlers(id)
 
     res.send({
       success: true,
-      result: [...result]
+      result: result
     })
   })
 };

@@ -6,7 +6,6 @@ function dijkstra(head) {
     const distanceMap = new Map()   // 存储节点的距离
     const parentMap = new Map()     // 记录路径的 parent 
 
-    console.log('===>', head)
     distanceMap.set(head, 0)
 
     parentMap.set(head.value, '*')
@@ -34,7 +33,7 @@ function dijkstra(head) {
         selectNodes.add(minNode)
         minNode = getMinDistanceAndUnselectedNode(distanceMap, selectNodes)
     }
-    return parentMap
+    return { parentMap, distanceMap }
 }
 
 function getMinDistanceAndUnselectedNode(distanceMap, touchedNodes) {
