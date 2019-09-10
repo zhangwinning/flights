@@ -4,6 +4,7 @@
   "description": "Using Dijkstra's algorithm (\"finding the shortest distance between nodes in a graph\") to show maps 🌍.",
   "main": "index.js",
   "scripts": {
+    "pack": "webpack -p --progress --profile --colors",
     "start": "webpack -p --progress --profile --colors && node server",
     "start:dev": "node server",
     "start:pro": "node server && export NODE_ENV=production"
