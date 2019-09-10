@@ -4,6 +4,8 @@ const merge = require('webpack-merge');
 const helpers = require('./helpers');
 const commonConfig = require('./webpack.common');
 
+const UglifyJsPlugin = require("uglifyjs-3-webpack-plugin");
+
 module.exports = merge(commonConfig, {
   mode: 'production',
 
@@ -13,13 +15,13 @@ module.exports = merge(commonConfig, {
   },
 
   plugins: [
-    new webpack.optimize.UglifyJsPlugin({
-      compressor: {
+    new UglifyJsPlugin({
+      uglifyOptions: {
         warnings: false,
-        screw_ie8: true
-      },
-      output: {
-        comments: false
+        ie8: false,
+        output: {
+          comments: false
+        }
       }
     })
   ]

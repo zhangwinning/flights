@@ -1,6 +1,5 @@
 const express = require('express');
 const fs = require('fs');
-const historyApiFallback = require('connect-history-api-fallback');
 
 const path = require('path');
 const webpack = require('webpack');
@@ -11,6 +10,7 @@ const config = require('../config/config');
 const webpackConfig = require('../webpack.config');
 
 const isDev = process.env.NODE_ENV !== 'production';
+console.log('=====>', process.env.NODE_ENV)
 const port  = process.env.PORT || 8080;
 
 
@@ -29,10 +29,6 @@ require('./lib/initGraph')
 
 if (isDev) {
     const compiler = webpack(webpackConfig);
-
-    app.use(historyApiFallback({
-        verbose: false
-    }));
 
     app.use(webpackDevMiddleware(compiler, {
         publicPath: webpackConfig.output.publicPath,
