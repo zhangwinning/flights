@@ -7,7 +7,7 @@
     "pack": "webpack -p --progress --profile --colors",
     "start": "webpack -p --progress --profile --colors && node server",
     "start:dev": "node server",
-    "start:pro": "node server && export NODE_ENV=production"
+    "start:pro": "node server && export NODE_ENV=production && export PORT=8700"
   },
   "repository": {
     "type": "git",
