@@ -8,8 +8,8 @@ Using Dijkstra's algorithm ("finding the shortest distance between nodes in a gr
 
 2、通过经纬度计算每两个机场之间的距离
 
-3、使用 Dijkstra's 算法计算从单点到其余飞机场的最短距离
+3、使用 Dijkstra's 算法计算从单点到其余飞机场的最短距离
 
 4、使用 echarts 画航线图
 
-<h2> 感觉不错，欢迎 star，谢谢。<h2>
+<h2> 感觉不错，欢迎 star，谢谢。<h2>
