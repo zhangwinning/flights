@@ -1,7 +1,8 @@
 # flights
 Using Dijkstra's algorithm ("finding the shortest distance between nodes in a graph") to show maps 🌍.
 
-[演示地址](http://106.15.231.221:8101/)
+
+<h2><a href="http://106.15.231.221:8101/" target="_blank">演示地址</a></h2>
 
 1、数据来源 [data.dat](https://openflights.org/data.html)
 
@@ -11,3 +12,4 @@ Using Dijkstra's algorithm ("finding the shortest distance between nodes in a gr
 
 4、使用 echarts 画航线图
 
+<h2> 感觉不错，欢迎 star，谢谢。<h2>
