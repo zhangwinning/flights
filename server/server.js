@@ -10,7 +10,7 @@ const config = require('../config/config');
 const webpackConfig = require('../webpack.config');
 
 const isDev = process.env.NODE_ENV !== 'production';
-console.log('=====>', process.env.NODE_ENV)
+console.log('=====>', process.env.NODE_ENV, process.env.PORT)
 const port  = process.env.PORT || 8080;
 
 

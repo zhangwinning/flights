@@ -1,5 +1,5 @@
 const webpack = require('webpack');
-const autoprefixer = require('autoprefixer');
+// const autoprefixer = require('autoprefixer');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
@@ -38,30 +38,30 @@ module.exports = {
       },
 
       // SCSS files
-      {
-        test: /\.scss$/,
-        loader: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: [
-            {
-              loader: 'css-loader',
-              options: {
-                'sourceMap': true,
-                'importLoaders': 1
-              }
-            },
-            {
-              loader: 'postcss-loader',
-              options: {
-                plugins: () => [
-                  autoprefixer
-                ]
-              }
-            },
-            'sass-loader'
-          ]
-        })
-      },
+      // {
+      //   test: /\.scss$/,
+      //   loader: ExtractTextPlugin.extract({
+      //     fallback: 'style-loader',
+      //     use: [
+      //       {
+      //         loader: 'css-loader',
+      //         options: {
+      //           'sourceMap': true,
+      //           'importLoaders': 1
+      //         }
+      //       },
+      //       {
+      //         loader: 'postcss-loader',
+      //         options: {
+      //           plugins: () => [
+      //             autoprefixer
+      //           ]
+      //         }
+      //       },
+      //       'sass-loader'
+      //     ]
+      //   })
+      // },
       {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
