@@ -1,6 +1,5 @@
 # flights
-Using Dijkstra's algorithm ("finding the shortest distance between nodes in a graph") to show maps 🌍.
-
+使用 Dijkstra 算法（找寻最短航行路线）显示航线地图🌍。
 
 <h2><a href="http://106.15.231.221:8101/" target="_blank">演示地址</a></h2>
 
