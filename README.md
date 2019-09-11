@@ -10,7 +10,7 @@ Using Dijkstra's algorithm ("finding the shortest distance between nodes in a gr
 3. 使用 Dijkstra's 算法计算从单点到其余飞机场的最短距离
 4. 使用 echarts 画航线图
 
-### 项目展示:
+### 项目展示
 
 其中图1显示从北京机场到世界各个机场的最短航线；图2是根据所有最短航线画出的地图，均已实现💪。
 
